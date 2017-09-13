@@ -1,7 +1,3 @@
-body {
-  margin: 0 auto;
-  font-family: sans-serif; }
-
 h1, h2 {
   font-size: 70px;
   margin: 0;
@@ -9,6 +5,18 @@ h1, h2 {
   @media screen and (max-width: 600px) {
     h1, h2 {
       font-size: 55px; } }
+
+body {
+  margin: 0 auto;
+  font-family: sans-serif;
+  max-width: 960px; }
+
+@media screen and (max-width: 600px) {
+  .header, .about, .portfolioImages, .contact {
+    margin: 0 10%; } }
+
+.about {
+  height: 100vh; }
 
 #mainNav, .links {
   background-color: #fff; }
@@ -45,7 +53,7 @@ h1, h2 {
       color: #fff; }
 
 .header, .about {
-  height: 100vh; }
+  height: auto; }
 
 .header {
   background-color: #fff;
@@ -167,12 +175,8 @@ h1, h2 {
       .portfolioImages__section__grid, .portfolioImages__section img {
         padding-top: 20%; } }
 
-@media screen and (max-width: 600px) {
-  .header, .about, .portfolioImages, .contact {
-    margin: 0 10%; } }
-
 .contact__section {
-  height: 70vh; }
+  height: 100vh; }
   .contact__section__c-form {
     margin: 0 auto;
     max-width: 800px; }
